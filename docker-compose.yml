@@ -3,7 +3,7 @@ version: '3'
 services:
 
   nginx:
-    image: nginx1.21.5:v1
+    image: qq1007269259/nginx1:v1
     ports:
       - "80:80"
       - "443:443"
@@ -19,7 +19,7 @@ services:
     container_name: nginx
 
   php:
-    image: php-fpm8:v1
+    image: qq1007269259/php-fpm8:v1
     ports:
       - "9000:9000"
     volumes:
@@ -36,7 +36,7 @@ services:
     container_name: php
 
   redis:
-    image: redis
+    image: qq1007269259/redis:v1
     ports:
       - "6379:6379"
     volumes:
@@ -46,7 +46,7 @@ services:
     container_name: redis
 
   mysql:
-    image: mysql8:v1
+    image: qq1007269259/mysql8:v1
     ports:
       - "3306:3306"
     volumes:
